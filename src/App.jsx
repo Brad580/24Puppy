@@ -1,12 +1,18 @@
+/* eslint-disable no-unused-vars */
+import React from 'react';  
+import MyApp from './MyApp.jsx'; 
+import './App.css';
+import { puppyList } from './data.js';
 
-import React from 'react';
+function App() {
 
-const App = () => {
+  console.log("puppyList: ", puppyList);
+
   return (
-    <div>
-      {/* Your new content goes here */}
+    <div className="App">
+      <MyApp /> {/* Using MyApp component */}
     </div>
   );
-};
+}
 
 export default App;
